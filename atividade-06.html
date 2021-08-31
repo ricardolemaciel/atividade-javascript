@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            var valores = [];
+            
+            for (let i = 0; i < 2; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            var soma = valores.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+            var result = soma/valores.length;
+
+            document.write("<h3>Os valores digitados foram: "+valores);
+            document.write("<br>");
+            document.write("<h3>Ou seja sendo "+valores.length, " a quantidade de números digitados<br> e sabendo que a soma dos elementos é "+soma, 
+                            " <br> a média aritmética dos elementos só pode ser: "+result);
+
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

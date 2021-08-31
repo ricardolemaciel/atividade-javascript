@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            var v1 = parseInt(prompt("Digite um valor:"));
+            var v2 = parseInt(prompt("Digite mais um valor:"));
+            var v3 = parseInt(prompt("Digite outro valor:"));
+            
+
+            if (v3 < v1 && v1 < v2) {
+                result = v1 + v2;
+            } else if (v2 < v1 && v1 < v3) {
+                result = v1 + v3;
+            } else {
+                result = v2+v3;
+            }
+            document.write(result);
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

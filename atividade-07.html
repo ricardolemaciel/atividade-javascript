@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            var valores = [];
+            
+            for (let i = 0; i < 4; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            var primeiro = valores[0];
+            var ultimo = valores[3];
+
+            var maior = valores.reduce(function(a,b) {
+                return Math.max(a,b);
+            });
+
+            document.write("O primeiro valor digitados foi: "+primeiro, "<br>");
+            document.write("O último  valor digitado foi: "+ultimo, "<br>");
+            document.write("O maior valor foi: "+maior);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

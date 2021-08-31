@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            var valores = [];
+            
+            for (let i = 0; i < 10; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            var soma = valores.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+
+            document.write("O total é de: "+soma);
+
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

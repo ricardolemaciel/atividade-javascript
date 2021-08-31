@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            var valores = [];
+            var menor = [];
+            var j = 0;
+
+            for (let i = 0; i < 6; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            for (let i = 0; i < valores.length; i++) {
+                if (valores[i] < 72) {
+                    menor[j] = valores[i];
+                    j++;
+                }
+            }
+
+
+            var soma = menor.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+
+            document.write("O resultado da soma foi o seguinte: "+soma,"<br>");
+            document.write("Os valores digitados foram os seguintes: "+valores, "<br>");
+            document.write("Os valores utilizados na soma foram estes: "+menor,"<br>");
+            
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

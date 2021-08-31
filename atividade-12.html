@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <script>
+            var parcelas = parseInt(prompt("digite a quantidade de parcelas em que deseja dividir!"));
+            var preco = 18.230;
+
+            if (parcelas > 0 && parcelas <= 15){
+                var result =  preco / parcelas;
+                document.write("O valor de sua parcela será de: "+result.toFixed(3));
+            } else {
+                alert("O número maximo de parcelas permitido é de 15, favor informar um número valido!");
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
