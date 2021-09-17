@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            var i = 0;
+            var num = [];
+
+            while(i < 3) {
+                num[i] = parseInt(prompt("digite um valor"));
+                i = i + 1;
+            }
+            var soma = num.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+            var result = soma/num.length;
+            document.write(result)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

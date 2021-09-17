@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            function converterCelsiusFahrenheit() {
+                var celsius = 10;
+                var fahrenheit  = (celsius * (9/5)+32);
+                console.log(celsius)
+                document.write(celsius+"° C é igual a "+fahrenheit+"° F");
+            }
+
+            function converterFahrenheitCelsius() {
+                var fahrenheit  = 10;
+                var celsius  = (fahrenheit - 32) * (9/5);
+                document.write(fahrenheit+"° F é igual a "+celsius+"° C");
+            }
+
+            converterCelsiusFahrenheit();
+            document.write("<br>")
+            converterFahrenheitCelsius();
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
