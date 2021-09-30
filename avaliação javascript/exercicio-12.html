@@ -1,0 +1,19 @@
+<!--  Faça um programa que leia 10 números informados pelo usuário
+    e ao final da leitura escrever a soma total dos 10 números lidos.  -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            var valores = [];
+            
+            for (let i = 0; i < 10; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            var soma = valores.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+            document.write("A Soma dos numeros digitados é: "+soma);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

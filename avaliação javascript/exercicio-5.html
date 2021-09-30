@@ -1,0 +1,32 @@
+<!-- Faça um programa que receba dois números reais e mostre um menu de opções (Subtrair, Somar, Multiplicar e Dividir), 
+    realizando a operação de acordo com a opção escolhida no menu e mostrando o resultado. -->
+<html>
+    <head>
+        <script>
+            var v1 = parseFloat(prompt("Digite um valor:"));
+            var v2 = parseFloat(prompt("Digite mais um valor:"));
+            
+            var escolha = parseInt(prompt('Selecione uma das opções: \n1.) Subtrair 2.) Somar 3.) Multiplicar 4.) Dividir'));
+            
+            switch (escolha) {
+
+                case 1: result = v1 - v2;
+                break;
+
+                case 2: result = v1 + v2;
+                break;
+
+                case 3: result = v1 * v2;
+                break;
+
+                case 4: result = v1 / v2;
+                break;
+
+            }
+
+            document.write(result)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

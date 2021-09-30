@@ -1,0 +1,31 @@
+<!--  Faça um programa que leia 10 números que o usuário vai informar. 
+    Todos os números lidos com valor inferior a 40 devem ser somados.
+    Escreva o valor final da soma efetuada.   -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            var valores = [];
+            var menor = [];
+            var j = 0;
+
+            for (let i = 0; i < 6; i++) {
+                valores[i] = parseInt(prompt("Digite um valor:"));
+            }
+
+            for (let i = 0; i < valores.length; i++) {
+                if (valores[i] < 40) {
+                    menor[j] = valores[i];
+                    j++;
+                }
+            }
+            var soma = menor.reduce((primeiroValor, valorAtual) => primeiroValor + valorAtual,0);
+
+            document.write("O resultado da soma foi o seguinte: "+soma,"<br>");
+            document.write("Os valores digitados foram os seguintes: "+valores, "<br>");
+            document.write("Os valores utilizados na soma foram estes: "+menor,"<br>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

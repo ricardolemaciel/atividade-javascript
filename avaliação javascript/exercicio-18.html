@@ -1,0 +1,20 @@
+<!--  A Wesley Peças Automotivas calcula o preço de venda dos seus produtos com uma margem de aumento x%. 
+    Portanto, construa um algoritmo em Javascript que, dados o valor de custo e a margem de aumento, imprima o preço de venda. 
+    O usuário deve informar tanto o valor do produto quanto a margem de lucro -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script>
+            var valorCusto = parseFloat(prompt("Digite o valor do custo"));
+            var margemAumento = parseFloat(prompt("Digite a margem de lucro"));
+
+            var porcentagem = (valorCusto * margemAumento) / 100;
+            
+            var precoVenda = valorCusto + porcentagem;
+            
+            document.write("O preço da venda é: R$" + precoVenda)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

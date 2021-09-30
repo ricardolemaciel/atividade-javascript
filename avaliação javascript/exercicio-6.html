@@ -1,0 +1,22 @@
+<!-- Faça um programa que leia dois valores e exiba uma das três mensagens a seguir: ‘Números iguais’, 
+        caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior que o segundo; ‘Segundo maior’, 
+        caso o segundo seja maior que o primeiro.  -->
+<html>
+    <head>
+        <script>
+            var v1 = parseInt(prompt("Digite um valor:"));
+            var v2 = parseInt(prompt("Digite mais um valor:"));
+            
+            if (v1 == v2) {
+                result = "Os números são iguais.";
+            } else if (v1 > v2) {
+                result = "O primeiro número é maior.";
+            } else {
+                result = "O segundo número é maior";
+            }
+            document.write(result);
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
