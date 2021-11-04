@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ELEVADOR</title>
+    </head>
+<body>
+
+  <script type="text/javascript">
+class Elevador {
+    constructor(andar,totalAndares,capacidade,passageiros){
+        this.andar = andar;
+        this.totalAndares = totalAndares;
+        this.capacidade = capacidade;
+        this.passageiros = passageiros;
+    }
+
+    Entra(qtdPessoas) {
+        if(qtdPessoas <= this.capacidade || qtdPessoas < this.passageiros){
+            this.passageiros = this.passageiros + qtdPessoas;
+            console.log("+ "+qtdPessoas+" passageiro(s)")
+        }else{
+            console.log("A capacidade máxima do elevador é de "+this.capacidade+" pessoas!")
+        }
+    }
+
+    Sai(qtdPessoas) {
+        if( qtdPessoas <= this.passageiros){
+            this.passageiros = this.passageiros - qtdPessoas;
+            console.log("- "+qtdPessoas+" passageiro(s)")
+        }else{
+            console.log("Existem "+this.passageiros+" pessoas dentro do elevador!")
+        }
+    }
+
+    Sobe(qualAndar) {
+        if(qualAndar < this.totalAndares){
+            this.andar = this.andar + qualAndar;
+            console.log("Sobe "+qualAndar+" andar(es)")
+        }else{
+            console.log("Só existem "+ this.totalAndares + " andares disponiveis!")
+        }
+    }
+
+    Desce(qualAndar) {
+        if(this.andar != 0){
+            this.andar = this.andar - qualAndar;
+            console.log("Desce "+qualAndar+" andar(es)")
+        }else{
+            console.log("O elevador já está no térreo!")
+        }
+    }
+}
+
+var elevador = new Elevador(0,10,6,0);
+
+    elevador.Entra(2);
+    elevador.Sobe(5);
+    elevador.Sai(1);
+    elevador.Sobe(2);
+    elevador.Sai(1);
+    elevador.Entra(4);
+    elevador.Desce(7);
+    elevador.Sai(4);
+
+console.log(elevador)
+
+  </script>
+
+</body>
+</html>
